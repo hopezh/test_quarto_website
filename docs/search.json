@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "Test_quarto_website",
     "section": "",
-    "text": "This is a Quarto website, built by oatcracker!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website, built by oatcracker!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\ntest python code block\n\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()\n# fig.write_json('fig.json')"
   }
 ]
