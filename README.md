@@ -2,7 +2,7 @@
 
 
 1. create a `quarto` website project
-```shell
+```{shell}
 quarto create project website myQuartoWebsite
 ```
 
