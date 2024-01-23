@@ -5,3 +5,18 @@ title: "Test_quarto_website"
 This is a Quarto website, built by oatcracker!
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+# test python code block
+
+```{python}
+import plotly.express as px
+import plotly.io as pio
+df = px.data.iris()
+fig = px.scatter(df, x="sepal_width", y="sepal_length", 
+                 color="species", 
+                 marginal_y="violin", marginal_x="box", 
+                 trendline="ols", template="simple_white")
+# fig.show()
+fig.write_json('fig.json')
+```
+
