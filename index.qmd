@@ -6,7 +6,72 @@ This is a Quarto website, built by oatcracker!
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-# test python code block
+# test tabset
+
+::: {.panel-tabset}
+
+## polars
+
+```{python}
+import polars as pl
+print('polars version:', pl.__version__)
+```
+
+## pandas 
+
+
+```{python}
+import pandas as pd
+print('pandas version:', pd.__version__)
+```
+
+:::
+
+# test two-column layout
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{python}
+import polars as pl
+print('polars version:', pl.__version__)
+```
+:::
+
+::: {.column width="50%"}
+```{python}
+import pandas as pd
+print('pandas version:', pd.__version__)
+```
+:::
+
+::::
+
+
+# test side-by-side tables 
+
+::: {#tbl-panel layout-ncol=2}
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: First Table {#tbl-first}
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: Second Table {#tbl-second}
+
+Main Caption
+:::
+
+
+# test interactive plot
 
 ```{python}
 import plotly.express as px
