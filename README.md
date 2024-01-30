@@ -42,10 +42,19 @@ quarto preview
 ```
 
 
-6. stop quarto preview, and sync the quarto website repo so that the docs folder on github is updated
+6. stop quarto preview
 
 
-7. check the `Deployments` section of the git repo 
+7. sync the quarto website repo so that the docs folder on github is updated
+
+
+8. go to `git repo` -> `settings` -> `code and automation` -> `pages` section
+
+
+9. in settings for `GitHub Pages`, select `main` and `/docs` for `Branch`, and `Save` 
+
+
+10. check the `Deployments` section of the git repo after a while. 
 
 
 Ref: [quarto guide > publishing > github pages](https://quarto.org/docs/publishing/github-pages.html#publish-command)
